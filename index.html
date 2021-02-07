@@ -31,27 +31,74 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    
+ <style>
+    
+    /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>   
+    
 
 </head>
 <body>
+    
+    
 	<header>
-		<div class="layout_padding banner_section_start">
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+		
+        
+         <div class="col-sm" style="position: fixed; top: 0; z-index: 1; background: white;">
+            <div class="container" >
+               <div class="row" >
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section" >
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"><a href="#home"><img src="images/coolerly_logo.jpeg" style="max-width: 30%;"></a> 
+                           <div class="logo"><a href="#home"><img src="images/coolerly_logo.jpeg" style="max-width: 25%; margin-top: 2px"></a> 
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <div class="menu-area">
-                        <div class="limit-box">
-                           <nav class="main-menu">
+                  <div class="" >
+                           <nav class="main-menu" >
                               <ul class="menu-area-main">
                                  <li class="active"><a href="#home">Inicio</a></li>
                                  <li><a href="#about">Sobre</a></li>
@@ -60,20 +107,24 @@
                                  <li><a href="#contact">Entre em contacto</a></li>
                               </ul>
                            </nav>
-                        </div>
-                     </div>
                  </div>
                </div>
             </div>
-         </div>
-         <!-- end header inner -->		
-	<!-- banner start-->
-	<div class="layout_padding banner_section">
-		<div class="container">
-           
+         
+
+    </div>
+	</header> 
+    
+ 
+   
+    
+    
+    
+    <div id="about" class="layout_padding about_section">
+        <div class="container">
       <div class="row ">
-				<div class="col-md-6 taital">
-					<h1 class="taital">Coolerly<strong class="banner_taital">Frigorífico inteligente </strong></h1>
+				<div class="col-md-6">
+					<h1 class="">Coolerly<strong class="banner_taital">Frigorífico inteligente </strong></h1>
                      <p class="lorem_text">Regulação customizável e independente da temperatura em vários sectores do frigorífico</p>
 				</div>
 				<div class="col-md-6">
@@ -83,11 +134,8 @@
 				<button class="bt_main"><a href="#">Saber mais</a></button>
 				</div>
 			</div>
-			
+			</div>
 		</div>
-	</div>
-    </div>
-	</header>
 	<!-- banner end-->
 	<!-- about start-->
 	<div id="about" class="layout_padding about_section">
@@ -102,7 +150,7 @@
 		        </div>
 			</div>
 		</div>
-	</div>
+	
 	<!-- product start-->
 	<div id="products" class="layout_padding product_section ">
 		<div class="container">
@@ -358,6 +406,8 @@
          $(this).removeClass('transition');
          });
          });
+          
+       
          </script> 
 
         
@@ -516,10 +566,10 @@ body {
     } 
     
     
-
-
     
 </style>
+        
+        
 
 </body>
 </html>
